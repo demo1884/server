@@ -1,0 +1,579 @@
+{
+	"meta": {
+		"chronografVersion": "1.8.5",
+		"sources": {
+			"1": {
+				"name": "Influx 1",
+				"link": "/chronograf/v1/sources/1"
+			}
+		}
+	},
+	"dashboard": {
+		"id": "6",
+		"cells": [
+			{
+				"i": "54a4f218-f6d2-44d5-9632-c63ecfb34fe4",
+				"x": 0,
+				"y": 6,
+				"w": 12,
+				"h": 2,
+				"name": "Meter 4",
+				"queries": [
+					{
+						"query": "SELECT \"Ia\" AS \"Ia\", \"Ib\" AS \"Ib\", \"Ic\" AS \"Ic\" FROM \"MCCBSensors\".\"basic\".\"Reading\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"DeviceId\"=:Local_Sensor_ID: AND \"ChannelId\"='4'",
+						"queryConfig": {
+							"database": "",
+							"measurement": "",
+							"retentionPolicy": "",
+							"fields": [],
+							"tags": {},
+							"groupBy": {
+								"time": "",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"rawText": "SELECT \"Ia\" AS \"Ia\", \"Ib\" AS \"Ib\", \"Ic\" AS \"Ic\" FROM \"MCCBSensors\".\"basic\".\"Reading\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"DeviceId\"=:Local_Sensor_ID: AND \"ChannelId\"='4'",
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line",
+				"colors": [
+					{
+						"id": "1afaabe5-fbfe-45c4-bf1d-d63a33e94b1b",
+						"type": "scale",
+						"hex": "#31C0F6",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "1f116380-7374-483e-a6d3-330a2042b27b",
+						"type": "scale",
+						"hex": "#A500A5",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "0a986b80-6d4c-47ca-9713-e0b13873edc5",
+						"type": "scale",
+						"hex": "#FF7E27",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/54a4f218-f6d2-44d5-9632-c63ecfb34fe4"
+				}
+			},
+			{
+				"i": "6f29bdc2-77da-4f69-a480-47f822622f12",
+				"x": 0,
+				"y": 4,
+				"w": 12,
+				"h": 2,
+				"name": "Meter 3",
+				"queries": [
+					{
+						"query": "SELECT \"Ia\" AS \"Ia\", \"Ib\" AS \"Ib\", \"Ic\" AS \"Ic\" FROM \"MCCBSensors\".\"basic\".\"Reading\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"DeviceId\"=:Local_Sensor_ID: AND \"ChannelId\"='3'",
+						"queryConfig": {
+							"database": "",
+							"measurement": "",
+							"retentionPolicy": "",
+							"fields": [],
+							"tags": {},
+							"groupBy": {
+								"time": "",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"rawText": "SELECT \"Ia\" AS \"Ia\", \"Ib\" AS \"Ib\", \"Ic\" AS \"Ic\" FROM \"MCCBSensors\".\"basic\".\"Reading\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"DeviceId\"=:Local_Sensor_ID: AND \"ChannelId\"='3'",
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line",
+				"colors": [
+					{
+						"id": "1afaabe5-fbfe-45c4-bf1d-d63a33e94b1b",
+						"type": "scale",
+						"hex": "#31C0F6",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "1f116380-7374-483e-a6d3-330a2042b27b",
+						"type": "scale",
+						"hex": "#A500A5",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "0a986b80-6d4c-47ca-9713-e0b13873edc5",
+						"type": "scale",
+						"hex": "#FF7E27",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/6f29bdc2-77da-4f69-a480-47f822622f12"
+				}
+			},
+			{
+				"i": "3dd6b652-8cfc-468b-a405-c3f9614d3288",
+				"x": 0,
+				"y": 2,
+				"w": 12,
+				"h": 2,
+				"name": "Meter 2",
+				"queries": [
+					{
+						"query": "SELECT \"Ia\" AS \"Ia\", \"Ib\" AS \"Ib\", \"Ic\" AS \"Ic\" FROM \"MCCBSensors\".\"basic\".\"Reading\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"DeviceId\"=:Local_Sensor_ID: AND \"ChannelId\"='2'",
+						"queryConfig": {
+							"database": "",
+							"measurement": "",
+							"retentionPolicy": "",
+							"fields": [],
+							"tags": {},
+							"groupBy": {
+								"time": "",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"rawText": "SELECT \"Ia\" AS \"Ia\", \"Ib\" AS \"Ib\", \"Ic\" AS \"Ic\" FROM \"MCCBSensors\".\"basic\".\"Reading\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"DeviceId\"=:Local_Sensor_ID: AND \"ChannelId\"='2'",
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line",
+				"colors": [
+					{
+						"id": "1afaabe5-fbfe-45c4-bf1d-d63a33e94b1b",
+						"type": "scale",
+						"hex": "#31C0F6",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "1f116380-7374-483e-a6d3-330a2042b27b",
+						"type": "scale",
+						"hex": "#A500A5",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "0a986b80-6d4c-47ca-9713-e0b13873edc5",
+						"type": "scale",
+						"hex": "#FF7E27",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/3dd6b652-8cfc-468b-a405-c3f9614d3288"
+				}
+			},
+			{
+				"i": "d849f256-3d16-4e97-a845-6886f95c0a69",
+				"x": 0,
+				"y": 0,
+				"w": 12,
+				"h": 2,
+				"name": "Meter 1",
+				"queries": [
+					{
+						"query": "SELECT \"Ia\" AS \"Ia\", \"Ib\" AS \"Ib\", \"Ic\" AS \"Ic\" FROM \"MCCBSensors\".\"basic\".\"Reading\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"DeviceId\"=:Local_Sensor_ID: AND \"ChannelId\"='1'",
+						"queryConfig": {
+							"database": "",
+							"measurement": "",
+							"retentionPolicy": "",
+							"fields": [],
+							"tags": {},
+							"groupBy": {
+								"time": "",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"rawText": "SELECT \"Ia\" AS \"Ia\", \"Ib\" AS \"Ib\", \"Ic\" AS \"Ic\" FROM \"MCCBSensors\".\"basic\".\"Reading\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"DeviceId\"=:Local_Sensor_ID: AND \"ChannelId\"='1'",
+							"range": null,
+							"shifts": null
+						},
+						"source": "",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line",
+				"colors": [
+					{
+						"id": "1afaabe5-fbfe-45c4-bf1d-d63a33e94b1b",
+						"type": "scale",
+						"hex": "#31C0F6",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "1f116380-7374-483e-a6d3-330a2042b27b",
+						"type": "scale",
+						"hex": "#A500A5",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					},
+					{
+						"id": "0a986b80-6d4c-47ca-9713-e0b13873edc5",
+						"type": "scale",
+						"hex": "#FF7E27",
+						"name": "Nineteen Eighty Four",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/cells/d849f256-3d16-4e97-a845-6886f95c0a69"
+				}
+			}
+		],
+		"templates": [
+			{
+				"tempVar": ":Local_Sensor_ID:",
+				"values": [
+					{
+						"value": "'50011'",
+						"type": "csv",
+						"selected": true
+					},
+					{
+						"value": "'50012'",
+						"type": "csv",
+						"selected": false
+					},
+					{
+						"value": "'50021'",
+						"type": "csv",
+						"selected": false
+					},
+					{
+						"value": "'50022'",
+						"type": "csv",
+						"selected": false
+					},
+					{
+						"value": "'50031'",
+						"type": "csv",
+						"selected": false
+					},
+					{
+						"value": "'50032'",
+						"type": "csv",
+						"selected": false
+					}
+				],
+				"id": "22f28d90-e12c-44b6-9921-53395903f1cc",
+				"type": "csv",
+				"label": "",
+				"query": {
+					"influxql": "",
+					"measurement": "",
+					"tagKey": "",
+					"fieldKey": ""
+				},
+				"sourceID": "dynamic",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/templates/22f28d90-e12c-44b6-9921-53395903f1cc"
+				}
+			},
+			{
+				"tempVar": ":MeterID:",
+				"values": [
+					{
+						"value": "'1'",
+						"type": "csv",
+						"selected": true
+					},
+					{
+						"value": "'2'",
+						"type": "csv",
+						"selected": false
+					},
+					{
+						"value": "'3'",
+						"type": "csv",
+						"selected": false
+					},
+					{
+						"value": "'4'",
+						"type": "csv",
+						"selected": false
+					}
+				],
+				"id": "ba5d6f10-dde2-42e4-9da8-eff9c790e2a6",
+				"type": "csv",
+				"label": "",
+				"query": {
+					"influxql": "",
+					"measurement": "",
+					"tagKey": "",
+					"fieldKey": ""
+				},
+				"sourceID": "dynamic",
+				"links": {
+					"self": "/chronograf/v1/dashboards/6/templates/ba5d6f10-dde2-42e4-9da8-eff9c790e2a6"
+				}
+			}
+		],
+		"name": "Current",
+		"organization": "default",
+		"links": {
+			"self": "/chronograf/v1/dashboards/6",
+			"cells": "/chronograf/v1/dashboards/6/cells",
+			"templates": "/chronograf/v1/dashboards/6/templates"
+		}
+	}
+}
